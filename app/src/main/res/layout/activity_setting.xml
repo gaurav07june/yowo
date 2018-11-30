@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SettingActivity">
+    <include android:id="@+id/layToolbar"
+        layout="@layout/collapsed_toolbar_with_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/rltLayEmailNotification"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_below="@+id/layToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_10sdp"
+        android:animateLayoutChanges="true"
+        android:paddingRight="@dimen/_10sdp">
+
+        <com.nomad.customview.NMGTextView
+            android:id="@+id/txtEmailNotification"
+            android:text="@string/email_notification"
+            app:fontName="nomad_font_bold.ttf"
+            android:textColor="@color/colorBlackText"
+            android:textSize="@dimen/_11sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.nomad.customview.NMGTextView
+            android:layout_below="@+id/txtEmailNotification"
+            android:id="@+id/txtEmailNotificationDesc"
+            android:text="@string/email_notification_desc"
+            android:layout_marginTop="@dimen/_4sdp"
+            app:fontName="nomad_font_medium.ttf"
+            android:textColor="@color/colorWhiteBorderText"
+            android:textSize="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imgToggleOn"
+            android:layout_width="@dimen/_50sdp"
+            android:scaleType="centerInside"
+            android:layout_height="@dimen/_20sdp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/on"/>
+        <ImageView
+            android:id="@+id/imgToggleOff"
+            android:layout_width="@dimen/_50sdp"
+            android:scaleType="centerInside"
+            android:layout_height="@dimen/_20sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/off"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/rltLayPushNotification"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/rltLayEmailNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_10sdp"
+        android:animateLayoutChanges="true"
+        android:paddingRight="@dimen/_10sdp">
+
+        <com.nomad.customview.NMGTextView
+            android:id="@+id/txtPushNotification"
+            android:text="@string/push_notification"
+            android:textAllCaps="true"
+            app:fontName="nomad_font_bold.ttf"
+            android:textColor="@color/colorBlackText"
+            android:textSize="@dimen/_11sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.nomad.customview.NMGTextView
+            android:layout_below="@+id/txtPushNotification"
+            android:id="@+id/txtPushNotificationDesc"
+            android:text="@string/push_notification_desc"
+            android:layout_marginTop="@dimen/_4sdp"
+            app:fontName="nomad_font_medium.ttf"
+            android:textColor="@color/colorWhiteBorderText"
+            android:textSize="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imgPushToggleOn"
+            android:layout_width="@dimen/_50sdp"
+            android:scaleType="centerInside"
+            android:layout_height="@dimen/_20sdp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/on"/>
+        <ImageView
+            android:id="@+id/imgPushToggleOff"
+            android:layout_width="@dimen/_50sdp"
+            android:scaleType="centerInside"
+            android:layout_height="@dimen/_20sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/off"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltLayChangePassword"
+        android:layout_below="@+id/rltLayPushNotification"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:layout_height="wrap_content">
+
+        <com.nomad.customview.NMGTextView
+            android:id="@+id/txtChangePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_password"
+            app:fontName="nomad_font_bold.ttf"
+            android:textColor="@color/colorBlackText"
+            android:textSize="@dimen/_13sdp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+</layout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".fragment.FavouriteFragment">
+    <include android:id="@+id/layToolbar"
+        layout="@layout/collapsed_toolbar_with_bg"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/layToolbar"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_7sdp"
+        android:background="@color/colorWhiteSmokeD"
+        android:animateLayoutChanges="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/btnFabPastLogToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:weightSum="2">
+
+            <com.nomad.customview.NMGTextView
+                android:id="@+id/txtFavouriteButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/fav_pastlog_filter_left_bg_transition"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/favourites"
+                android:textAllCaps="true"
+                android:textColor="@color/day_hour_filter_txt_selector"
+                android:textSize="@dimen/_10sdp"
+                app:fontName="nomad_font_bold.ttf" />
+
+            <com.nomad.customview.NMGTextView
+                android:id="@+id/txtPastLogButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/fav_pastlog_filter_right_bg_transition"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/past_logs"
+                android:textAllCaps="true"
+                android:textColor="@color/day_hour_filter_txt_selector"
+                android:textSize="@dimen/_10sdp"
+                app:fontName="nomad_font_bold.ttf" />
+        </LinearLayout>
+        <com.nomad.customview.NMGTextView
+            android:id="@+id/txtNoOfItem"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            android:textAllCaps="true"
+            app:fontName="nomad_font_bold.ttf"
+            android:textColor="@color/colorBlackText"
+            android:textSize="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btnFabPastLogToggle"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/favouriteRv"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/txtNoOfItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:layout_marginBottom="@dimen/_59sdp"
+            android:layoutAnimation="@anim/layout_animation_fall_down">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</RelativeLayout>
+</layout>

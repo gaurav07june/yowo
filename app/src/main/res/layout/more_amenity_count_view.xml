@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_40sdp"
+    android:layout_height="@dimen/_40sdp"
+    android:padding="@dimen/_4sdp"
+
+    >
+    <TextView
+        android:id="@+id/more_amenity_count_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/amenity_more_count_bg"
+        android:text="+2"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_10sdp"
+        android:gravity="center"/>
+
+</FrameLayout>

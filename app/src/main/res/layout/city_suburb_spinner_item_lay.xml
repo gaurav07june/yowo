@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/_7sdp"
+    android:paddingBottom="@dimen/_7sdp">
+
+    <com.nomad.customview.NMGTextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:id="@+id/txtItem"
+        android:textColor="@color/colorBlackText"
+        app:fontName = "nomad_font_medium.ttf"
+        android:textSize="@dimen/_14sdp"
+        android:layout_centerHorizontal="true"/>
+
+    <com.nomad.customview.NMGTextView
+        android:id="@+id/txtId"
+        android:layout_toLeftOf="@+id/txtItem"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="0"
+        android:visibility="gone"
+        android:textColor="@color/colorBlackText"
+        app:fontName= "nomad_font_medium.ttf"
+        android:textSize="@dimen/_15sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/viewSeparator"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/colorWhiteBorder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/txtItem"/>
+
+</RelativeLayout>

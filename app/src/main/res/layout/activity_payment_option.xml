@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.PaymentOptionActivity">
+        <!--toolbar-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:contentInsetEnd="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetStart="0dp"
+            android:elevation="@dimen/_3sdp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_back"
+                    android:tint="@color/colorBlack" />
+
+                <com.nomad.customview.NMGTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payment_option"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_16sdp"
+                    app:fontName="nomad_font_medium.ttf"/>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+        <!--content-->
+        <LinearLayout
+            android:id="@+id/lnrLayContent"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                >
+
+                <com.nomad.customview.NMGTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount_to_paid"
+                    app:fontName = "nomad_font_bold.ttf"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_11sdp"
+                    android:gravity="center_vertical"
+
+                    android:textColor="@color/colorBlackText"/>
+                <com.nomad.customview.NMGTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtAmount"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="$180"
+                    android:textColor="@color/colorBlackText"
+                    app:fontName = "nomad_font_bold.ttf"
+                    android:textSize="@dimen/_21sdp"/>
+            </RelativeLayout>
+
+            <!-- toggle card button-->
+            <LinearLayout
+                android:id="@+id/lnrLayAddOrSavedCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:weightSum="2">
+
+                <com.nomad.customview.NMGTextView
+                    android:id="@+id/txtSavedCardButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/fav_pastlog_filter_left_bg_transition"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/saved_cards"
+                    android:textAllCaps="true"
+                    android:textColor="@color/booking_filter_txt_selector"
+                    android:textSize="@dimen/_10sdp"
+                    app:fontName="nomad_font_bold.ttf" />
+
+                <com.nomad.customview.NMGTextView
+                    android:id="@+id/txtAddNewCardButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/fav_pastlog_filter_right_bg_transition"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/add_new_card"
+                    android:textAllCaps="true"
+                    android:textColor="@color/booking_filter_txt_selector"
+                    android:textSize="@dimen/_10sdp"
+                    app:fontName="nomad_font_bold.ttf" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/frmLayCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

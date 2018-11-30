@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.nomad.customview.NMGTextView
+        android:id="@+id/txtNoRecordFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAllCaps="true"
+        android:text="@string/no_record_found"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/colorPrimaryDark"
+        app:fontName = "nomad_font_bold.ttf"/>
+</RelativeLayout>

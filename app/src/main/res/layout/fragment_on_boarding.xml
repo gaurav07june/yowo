@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.OnBoardingFragment">
+
+
+    <ImageView
+        android:id="@+id/imgPager"
+        android:layout_width="match_parent"
+        android:layout_height="2000dp"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+        />
+
+    <View
+        android:id="@+id/on_boarding_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhiteT75" />
+
+    <com.nomad.customview.NMGTextView
+        android:id="@+id/txtPagerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginBottom="@dimen/_118sdp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="-10dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:textColor="@color/colorBlackButton"
+        android:text="Find more than a community of shared work space"
+        android:textSize="@dimen/_26sdp"
+        app:fontName="font_regular.otf" />
+</FrameLayout>

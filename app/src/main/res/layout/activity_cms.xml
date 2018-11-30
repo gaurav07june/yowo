@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CMSActivity">
+    <include android:id="@+id/layToolbar"
+        layout="@layout/collapsed_toolbar_with_bg"/>
+    <WebView
+        android:layout_below="@+id/layToolbar"
+        android:id="@+id/webViewCms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+</RelativeLayout>
+</layout>

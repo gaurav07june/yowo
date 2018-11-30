@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_12sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.nomad.customview.NMGTextView
+        android:id="@+id/number_of_persons_header_tv"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. of persons"
+        android:textColor="@color/colorBlackButton"
+        app:fontName="font_bold.otf"
+        android:textSize="@dimen/_14sdp"
+        />
+    <com.reginald.editspinner.EditSpinner
+        android:id="@+id/number_of_persons_spinner"
+        android:layout_below="@id/catering_package_name_tv"
+        android:layout_alignTop="@id/catering_package_desc_tv"
+        android:background="@drawable/hour_filter_txt_bg"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:drawableRight="@drawable/ic_arrow_down"
+        android:drawablePadding="@dimen/_5sdp"
+        android:drawableTint="@color/colorBlack"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_12sdp"
+        android:elevation="1dp"
+        />
+<com.nomad.customview.NMGTextView
+    android:id="@+id/catering_package_name_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@id/number_of_persons_header_tv"
+    android:paddingRight="@dimen/_5sdp"
+
+    android:singleLine="true"
+    android:textColor="@color/colorBlackButton"
+    app:fontName="font_bold.otf"
+    android:textSize="@dimen/_14sdp"
+    />
+
+    <com.nomad.customview.NMGTextView
+        android:id="@+id/catering_package_desc_tv"
+        android:layout_below="@id/catering_package_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/number_of_persons_header_tv"
+
+        android:maxLines="2"
+        android:textColor="@color/colorBlackButton"
+        app:fontName="font_regular.otf"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        />
+    <com.nomad.customview.NMGTextView
+        android:id="@+id/charges_tv"
+        android:layout_below="@id/catering_package_desc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="per person"
+        android:textColor="@color/colorBlack"
+        app:fontName="font_light.otf"
+        android:textSize="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        />
+    <com.nomad.customview.NMGTextView
+        android:id="@+id/total_charge_tv"
+        android:layout_below="@id/catering_package_desc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorBlack"
+        app:fontName="font_bold.otf"
+        android:textSize="@dimen/_17sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        />
+<View
+    android:id="@+id/line_separator_1"
+    android:layout_below="@id/charges_tv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_1sdp"
+    android:layout_marginTop="@dimen/_12sdp"
+    android:background="@color/colorWhiteSmokeD"/>
+</RelativeLayout>
+</layout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_2sdp"
+    app:cardElevation="@dimen/_1sdp"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:layout_marginLeft="@dimen/_12sdp"
+    android:layout_marginRight="@dimen/_12sdp"
+    android:id="@+id/meeting_space_card"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_8sdp">
+        <LinearLayout
+            android:id="@+id/meeting_space_header_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_6sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingLeft="@dimen/_12sdp"
+            android:gravity="center_vertical"
+            >
+        <com.nomad.customview.NMGCheckBox
+            android:id="@+id/meeting_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_10sdp"
+            android:theme="@style/AppCheckBoxTheme"
+            app:fontName="nomad_font_bold.ttf" />
+        <com.nomad.customview.NMGTextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:maxLines="2"
+            android:maxWidth="@dimen/_240sdp"
+
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlackButton"
+            android:textSize="@dimen/_14sdp"
+            app:fontName="font_bold.otf" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/meeting_space_detail_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:visibility="visible"
+            android:layout_below="@id/meeting_space_header_lay"
+            android:paddingTop="@dimen/_5sdp">
+
+            <com.nomad.customview.NMGTextView
+                android:id="@+id/type_header_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_12sdp"
+                android:text="@string/meeting_space_type"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15sdp"
+                app:fontName="font_medium.otf" />
+
+            <com.nomad.customview.NMGTextView
+                android:id="@+id/type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/type_header_tv"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_12sdp"
+
+                android:textColor="@color/colorBlackButton"
+                android:textSize="@dimen/_15sdp"
+                app:fontName="font_regular.otf" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:paddingRight="@dimen/_12sdp">
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@color/colorWhiteSmokeD" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp">
+
+                    <com.nomad.customview.NMGTextView
+                        android:id="@+id/capacity_header_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Capacity"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_15sdp"
+                        app:fontName="font_medium.otf" />
+
+                    <com.nomad.customview.NMGTextView
+                        android:id="@+id/capacity_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/capacity_header_tv"
+                        android:layout_alignLeft="@id/capacity_header_tv"
+                        android:layout_marginTop="@dimen/_2sdp"
+
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_15sdp"
+                        app:fontName="font_regular.otf"
+
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_separator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@id/type_tv"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@color/colorWhiteSmokeD" />
+
+            <com.nomad.customview.NMGTextView
+                android:id="@+id/services_header_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_separator"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_12sdp"
+                android:text="Services"
+                android:textColor="@color/colorBlackButton"
+                android:textSize="@dimen/_15sdp"
+                app:fontName="font_medium.otf" />
+
+            <com.nomad.customview.AmenitiesListView
+                android:id="@+id/service_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_below="@id/services_header_tv" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@color/colorLinen"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_12sdp"
+                android:paddingRight="@dimen/_12sdp"
+                android:paddingTop="@dimen/_10sdp">
+
+                <com.nomad.customview.NMGTextView
+                    android:id="@+id/meeting_space_charge_header_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meeting Space Charge"
+                    android:textColor="@color/colorBlackButton"
+                    android:textSize="@dimen/_15sdp"
+
+                    app:fontName="font_regular.otf" />
+
+                <com.nomad.customview.NMGTextView
+                    android:id="@+id/meeting_space_charge_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:textColor="@color/colorBlackButton"
+                    android:textSize="@dimen/_14sdp"
+                    app:fontName="font_regular.otf" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/collapse_toggle_btn"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/meeting_space_arrow_selector"
+            android:tint="@color/colorBlackButton"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+</layout>

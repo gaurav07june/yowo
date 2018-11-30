@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nomad.customview.NMGTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/booking_detail"
+        android:textSize="@dimen/_11sdp"
+        app:fontName = "nomad_font_bold.ttf"
+        android:textColor="@color/colorBlue"
+        android:drawablePadding="@dimen/_7sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/_10sdp"
+        android:drawableLeft="@drawable/sub_arrow_layer_list"
+        android:textAllCaps="true"/>
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FD573D</color>
+    <color name="colorPrimaryR">#fe836f</color>
+    <color name="colorPrimaryB">#000000</color>
+    <color name="colorPrimaryDark">#FD573D</color>
+    <color name="colorAccent">#08beea</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackT65">#A6000000</color>
+    <color name="colorPrimaryT65">#A608beea</color>
+    <color name="colorDashboardOverlay">#CC08beea</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteT65">#A6ffffff</color>
+    <color name="colorWhiteT75">#BFffffff</color>
+    <color name="colorWhiteSmoke">#F5F5F5</color>
+    <color name="colorWhiteSmokeD">#ebebeb</color>
+
+    <color name="colorGrayT65">#A6818285</color>
+    <color name="colorSnow">#f9f9f9</color>
+    <color name="colorSnowT95">#F2f9f9f9</color>
+    <color name="colorLinen">#eceee9</color>
+    <color name="colorBlue">#08BEEA</color>
+    <color name="colorBlueRipple">#9ce5f6</color>
+    <color name="colorBlackText">#1D2029</color>
+    <color name="colorBlackLabel">#838487</color>
+    <color name="colorBlackTextBold">#353536</color>
+    <color name="colorWhiteBorder">#E7EAEC</color>
+    <color name="colorWhiteBorderText">#A5AFB5</color>
+    <color name="colorFacebookRipple">#5b7dc3</color>
+    <color name="colorGray1">#7f7d7e</color>
+    <color name="colorGoogleRipple">#FFC201</color>
+
+    <!--changed color-->
+
+    <color name="colorOrange">#FD573D</color>
+    <color name="colorWhiteBackground">#F7F7F7</color>
+    <color name="colorGray">#818286</color>
+    <color name="colorBlackButton">#28282A</color>
+    <color name="colorBlackRipple">#4C4C4C</color>
+    <color name="colorOrange30PerTrans">#4DFD573D</color>
+
+</resources>

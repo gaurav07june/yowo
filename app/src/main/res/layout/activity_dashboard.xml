@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/dashboard_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <com.nomad.customview.AppBottomNavigationView
+                    android:id="@+id/bottom_navigation_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/navigation_menu"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/colorSnow"
+                android:theme="@style/NavigationDrawerTheme"
+                app:headerLayout="@layout/navigation_menu_header"
+                app:itemBackground="@drawable/navigation_item_bg"
+                app:menu="@menu/home_navigation_menu" />
+        </android.support.v4.widget.DrawerLayout>
+
+
+    </RelativeLayout>
+</layout>

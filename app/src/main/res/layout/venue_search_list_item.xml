@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.nomad.customview.NMGTextView
+        android:id="@+id/venue_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableTint="@color/colorGray"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        app:fontName = "font_regular.otf"
+        android:text="StarBucks"
+        android:textSize="@dimen/_13sdp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@color/colorWhiteSmoke"/>
+</LinearLayout>
+</layout>

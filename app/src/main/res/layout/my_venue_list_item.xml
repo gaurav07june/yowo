@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_4sdp"
+        android:elevation="@dimen/_5sdp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_8sdp">
+
+            <ImageView
+                android:id="@+id/venue_cover_iv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dashboard_panel_bg" />
+
+            <com.nomad.customview.NMGTextView
+                android:id="@+id/venue_distance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/venue_cover_iv"
+                android:background="@color/colorBlackT65"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                app:fontName="nomad_font_bold.ttf"
+                android:paddingRight="@dimen/_8sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="@string/distance"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp" />
+
+            <RelativeLayout
+                android:id="@+id/venue_detail_container_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/venue_cover_iv"
+                android:layout_marginTop="@dimen/_12sdp">
+
+                <com.nomad.customview.NMGTextView
+                    android:id="@+id/venue_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_14sdp"
+                    app:fontName="nomad_font_bold.ttf" />
+                <LinearLayout
+                    android:id="@+id/layLocationTime"
+                    android:layout_below="@+id/venue_title_tv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_height="wrap_content">
+
+                    <com.nomad.customview.NMGTextView
+                        android:id="@+id/venue_location"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/location"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:layout_weight="0.6"
+                        android:text=""
+                        app:fontName="nomad_font_regular.ttf"
+                        android:textSize="@dimen/_10sdp"
+
+                        />
+
+                    <com.nomad.customview.NMGTextView
+                        android:id="@+id/venue_timings_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:drawableLeft="@drawable/ic_timings"
+                        android:drawablePadding="@dimen/_5sdp"
+                        app:fontName="nomad_font_regular.ttf"
+                        android:text=""
+                        android:textSize="@dimen/_10sdp"
+
+                        android:layout_weight="0.4"
+                        />
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_below="@id/layLocationTime"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@color/colorWhiteSmoke" />
+
+            </RelativeLayout>
+
+            <com.nomad.customview.LikeButton
+                android:id="@+id/add_to_fav_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_below="@+id/venue_cover_iv"
+                android:layout_marginTop="-32dp"
+                android:tint="@color/colorPrimary"
+                app:backgroundTint="@color/colorWhite"
+                app:rippleColor="@color/colorBlue"
+                app:fabSize="normal" />
+
+            <LinearLayout
+                android:id="@+id/venue_detail_container_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/venue_detail_container_1"
+                android:orientation="vertical">
+
+                <com.nomad.customview.AmenitiesDefaultView
+                    android:id="@+id/amenitiesDefaultView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_below="@id/venue_location"
+                    android:background="@color/colorWhiteSmoke" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrLayCheckIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/venue_detail_container_2"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+
+                >
+
+                <com.nomad.customview.NMGTextView
+                    android:id="@+id/check_in_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_hollow_button_bg"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_24sdp"
+                    app:fontName="nomad_font_bold.ttf"
+                    android:paddingRight="@dimen/_24sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="Check In"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_10sdp"
+                    />
+                <com.nomad.customview.NMGTextView
+                    android:id="@+id/check_out_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_hollow_button_bg"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_24sdp"
+                    app:fontName="nomad_font_bold.ttf"
+                    android:paddingRight="@dimen/_24sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="Check Out"
+                    android:visibility="gone"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_10sdp"
+                    />
+
+                <com.nomad.customview.NMGTextView
+                    android:id="@+id/book_meeting_space_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:background="@drawable/ripple_button_bg"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:paddingRight="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="Book Meeting Space"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp"
+                    app:fontName = "nomad_font_bold.ttf" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</layout>

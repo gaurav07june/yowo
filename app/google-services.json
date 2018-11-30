@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "773769195884",
+    "firebase_url": "https://nomad-3d0b8.firebaseio.com",
+    "project_id": "nomad-3d0b8",
+    "storage_bucket": "nomad-3d0b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773769195884:android:d702f21d13458d1d",
+        "android_client_info": {
+          "package_name": "com.nomad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773769195884-huob3fd5r22rfqu1tthd97irmhmavsea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7eASA5VgqMTqM16UzMKJNcvVicC4kd64"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

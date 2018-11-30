@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/card_view_large"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:elevation="@dimen/_5sdp">
+        <RelativeLayout
+            android:id="@+id/booking_item_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:padding="@dimen/_5sdp"
+            >
+
+
+            <ImageView
+                android:id="@+id/imgVenueLogo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_145sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dashboard_panel_bg" />
+
+            <com.nomad.customview.NMGTextView
+                android:id="@+id/txtDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.5 km"
+                android:textSize="@dimen/_11sdp"
+                app:fontName = "nomad_font_bold.ttf"
+                android:layout_above="@+id/venue_detail_lay_top"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/colorBlackT65"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@color/colorWhite"/>
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewBookingDetailButton"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/venue_detail_lay_top"
+                android:layout_alignParentRight="true"
+                android:elevation="@dimen/_10sdp"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <include layout="@layout/booking_detail_pop_up"/>
+
+            </android.support.v7.widget.CardView>
+            <RelativeLayout
+                android:id="@+id/venue_detail_lay_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgVenueLogo"
+                android:orientation="vertical"
+                >
+
+                <com.nomad.customview.NMGTextView
+                    android:id="@+id/txtVenueName"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Starbucks"
+                    app:fontName="nomad_font_bold.ttf"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <com.nomad.customview.NMGTextView
+                    android:id="@+id/venue_location"
+                    android:layout_below="@+id/txtVenueName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:drawableLeft="@drawable/location"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:text="California"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_10sdp"
+                    app:fontName="nomad_font_medium.ttf"/>
+                <ImageView
+                    android:id="@+id/imgSubmenuButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_sub_menu"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    />
+
+                <ImageView
+                    android:id="@+id/map_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/imgSubmenuButton"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:src="@drawable/ic_mapview" />
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/venue_detail_lay_middle"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@+id/venue_detail_lay_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.nomad.customview.NMGTextView
+                    android:id="@+id/txtMeetingSpace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/meeting_space"
+                    app:fontName="nomad_font_bold.ttf"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/colorWhiteBorderText"/>
+                <com.nomad.customview.NMGTextView
+                    android:id="@+id/txtMeetingSpaceDetail"
+                    android:layout_below="@+id/txtMeetingSpace"
+                    android:text="The safe choice meeting space"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorBlackText"
+                    app:fontName="nomad_font_medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <ImageView
+                    android:id="@+id/imgAmenityOne"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/amenity_demo1"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    />
+                <ImageView
+                    android:id="@+id/imgAmenityTwo"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_toLeftOf="@+id/imgAmenityOne"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/amenity_demo1"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewSeparatorTop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorWhiteBorder"
+                android:layout_below="@+id/venue_detail_lay_middle"/>
+           <LinearLayout
+               android:id="@+id/lnrlayTimeAndBill"
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:weightSum="1"
+               android:layout_marginTop="@dimen/_4sdp"
+                android:gravity="center_horizontal"
+               android:layout_below="@+id/viewSeparatorTop"
+               android:layout_height="wrap_content">
+
+               <com.nomad.customview.NMGTextView
+                   android:id="@+id/txtVenueTime"
+                   android:layout_width="0dp"
+                   android:layout_weight="0.6"
+                   android:layout_height="wrap_content"
+                   android:drawableLeft="@drawable/ic_calendar"
+                   android:drawablePadding="@dimen/_7sdp"
+                   android:text="Oct 25, 2018 at 12:00 - 14:00"
+                   android:gravity="center_vertical"
+                   android:textColor="@color/colorBlack"
+                   app:fontName="nomad_font_regular.ttf"
+                   android:textSize="@dimen/_10sdp" />
+               <com.nomad.customview.NMGTextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/txtTotalBill"
+                   android:layout_weight="0.3"
+                   android:drawableLeft="@drawable/ic_calendar"
+                   android:drawablePadding="@dimen/_7sdp"
+                   android:gravity="center_vertical"
+                   android:textColor="@color/colorBlack"
+                   app:fontName="nomad_font_regular.ttf"
+                   android:textSize="@dimen/_10sdp"
+                   android:text="Total Bill"/>
+               <com.nomad.customview.NMGTextView
+                   android:id="@+id/txtBillAmount"
+                   android:textSize="@dimen/_12sdp"
+                   android:text="$45"
+                   android:textColor="@color/colorBlackText"
+                   android:layout_marginRight="@dimen/_15sdp"
+                   app:fontName="nomad_font_bold.ttf"
+                   android:layout_width="0dp"
+                   android:layout_weight="0.1"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</layout>

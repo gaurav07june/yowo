@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings" />
+    <item
+        android:id="@+id/about_us"
+        android:title="About us" />
+    <item
+        android:id="@+id/t_and_c"
+        android:title="@string/terms_condition" />
+    <item
+        android:id="@+id/privacy_policty"
+        android:title="Privacy Policy" />
+    <item
+        android:id="@+id/share_app"
+        android:title="Share App" />
+    <item
+        android:id="@+id/logout"
+        android:title="Logout" />
+</menu>

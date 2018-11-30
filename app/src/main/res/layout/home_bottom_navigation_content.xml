@@ -1,0 +1,65 @@
+<layout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_3sdp"
+        android:background="@drawable/drop_shadow"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_55sdp"
+    android:background="@color/colorWhite"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:paddingTop="@dimen/_8sdp"
+    >
+    <TextView
+        android:id="@+id/venues_btn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawablePadding="-5dp"
+        android:drawableTop="@drawable/ic_venue_bottom_nav_selector"
+        android:gravity="center"
+        android:paddingTop="@dimen/_2sdp"
+        android:text="Venues"
+        android:textColor="@color/bottom_nav_text_color_selector"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/my_bookings_btn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawablePadding="-5dp"
+        android:drawableTop="@drawable/ic_my_bookings_bottom_nav_selector"
+        android:gravity="center"
+        android:paddingTop="@dimen/_2sdp"
+        android:text="My Bookings"
+
+        android:textColor="@color/bottom_nav_text_color_selector"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/favorites_btn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawablePadding="-5dp"
+        android:drawableTop="@drawable/ic_favorites_bottom_nav_selector"
+        android:gravity="center"
+        android:paddingTop="@dimen/_2sdp"
+        android:text="Favorites"
+        android:textColor="@color/bottom_nav_text_color_selector"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_10sdp" />
+</LinearLayout>
+</LinearLayout>
+</layout>

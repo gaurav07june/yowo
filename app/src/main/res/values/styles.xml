@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryB</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryB</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/colorPrimaryB</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryB</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/splash_layer_list</item>
+        <item name="colorPrimary">@color/colorPrimaryB</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryB</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="NavigationDrawerTheme">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/primary_text_default_material_light</item>
+        <item name="android:textAllCaps">true</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar.LightEditText" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlHighlight">@color/colorWhiteBorder</item>
+        <item name="colorControlNormal">@color/colorWhiteBorder</item>
+        <item name="colorControlActivated">@color/colorWhiteBorder</item>
+    </style>
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorBlackLabel</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <!--<style name="AppCircularProgressViewStyle">
+        <item name="cpd_padding">0dp</item>
+        <item name="cpd_initialAngle">0</item>
+        <item name="cpd_maxSweepAngle">270</item>
+        <item name="cpd_minSweepAngle">1</item>
+        <item name="cpd_strokeSize">4dp</item>
+        <item name="cpd_strokeColor">?attr/colorAccent</item>
+        <item name="cpd_strokeSecondaryColor">@android:color/transparent</item>
+        <item name="cpd_reverse">false</item>
+        <item name="cpd_rotateDuration">1000</item>
+        <item name="cpd_transformDuration">600</item>
+        <item name="cpd_keepDuration">200</item>
+        <item name="cpd_transformInterpolator">@android:anim/decelerate_interpolator</item>
+        <item name="pv_progressMode">indeterminate</item>
+        <item name="cpd_inAnimDuration">0</item>
+        <item name="cpd_outAnimDuration">@android:integer/config_mediumAnimTime</item>
+    </style>-->
+
+
+    <style name="AppTheme.WhiteActionBar" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryB</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.White.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryB</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppCheckBoxTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorBlack</item>
+        <item name="colorControlActivated">@color/colorBlack</item>
+    </style>
+</resources>

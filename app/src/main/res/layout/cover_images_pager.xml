@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.nomad.customview.NMGCircularViewPager
+        android:id="@+id/pager_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        />
+    <com.nomad.customview.NMGTextView
+        android:id="@+id/cover_image_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13sdp"
+        android:text="1/3"
+        android:visibility="gone"
+        android:textColor="@color/colorBlackButton"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_alignParentRight="true"
+        app:fontName="font_regular.otf"
+        />
+</RelativeLayout>

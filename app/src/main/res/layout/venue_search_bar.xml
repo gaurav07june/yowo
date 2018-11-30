@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/venue_search_bar_bg"
+        android:elevation="@dimen/_5sdp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp">
+
+
+
+        <AutoCompleteTextView
+            android:id="@+id/search_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="Search Venues..."
+
+            android:paddingLeft="@dimen/_40sdp"
+            android:paddingRight="@dimen/_40sdp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlackButton"
+            android:textColorHint="@color/colorBlackButton"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/_16sdp" />
+
+        <View
+            android:id="@+id/search_box_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+        <ImageView
+            android:id="@+id/location_btn"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/location"
+            android:tint="@color/colorBlack" />
+        <ImageView
+            android:id="@+id/close_search_icon"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_close"
+            android:tint="@color/colorGray"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/search_tools_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/search_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_search" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:background="@color/colorWhiteSmoke" />
+
+            <ImageView
+                android:id="@+id/filter_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_filter"
+                android:tint="@color/filter_ic_color_selector" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@color/colorWhiteSmoke" />
+
+            <ImageView
+                android:id="@+id/map_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_mapview" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
